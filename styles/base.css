@@ -40,7 +40,7 @@ footer {
 
 main {
     display: flex;
-    max-width: auto;
+    max-width: none;
 }
 
 .card img {
