@@ -41,8 +41,8 @@ footer {
 }
 
 .card img {
-    max-width: 300px; /* Limit image width */
-    max-height: 300px; /* Limit image height */
+    max-width: 300px; 
+    max-height: 300px; 
 }
 
 .nav a:hover,
