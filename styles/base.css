@@ -33,10 +33,20 @@ footer {
 }
 
 
-main {
+.card{
     display: flex;
+    align-items: : flex-start;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
 }
 
-.card {
-    font-family: "Roboto Condensed", serif;
+.card img {
+    max-width: 300px; /* Limit image width */
+    max-height: 300px; /* Limit image height */
+}
+
+.nav a:hover,
+.nav a:focus {
+    background-color: #084ca1; /* Same effect as hover for keyboard users */
+    color: white;
 }
