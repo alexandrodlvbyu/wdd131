@@ -40,6 +40,7 @@ footer {
 
 main {
     display: flex;
+    max-width: auto;
 }
 
 .card img {
@@ -70,7 +71,3 @@ nav {
     color: white;
 }
 
-body {
-    height: fit-content ;
-    width: auto;
-}
