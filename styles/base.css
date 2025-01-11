@@ -7,7 +7,7 @@ h1 {
     border-width: 2rem;
 }
 
-nav {
+.linkbar {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
@@ -16,12 +16,11 @@ nav {
     grid-row: auto;
 }
 
-a {
+.linkbar {
     font-family: "Luckiest Guy", serif;
     font-weight: 400;
     text-decoration: none;
     border-color: black;
-    border-radius: 2rem;
 }
 
 footer {
@@ -31,4 +30,13 @@ footer {
     color: white;
     background-color: rgb(12, 98, 211);
     padding: 40px;
+}
+
+
+main {
+    display: flex;
+}
+
+.card {
+    font-family: "Roboto Condensed", serif;
 }
