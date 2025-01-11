@@ -4,7 +4,6 @@ h1 {
     color: white;
     background-color: rgb(12, 98, 211);
     padding: 50px;
-    border-width: 2rem;
 }
 
 .linkbar {
@@ -32,20 +31,46 @@ footer {
     padding: 40px;
 }
 
+.card {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    
+}
 
-.card{
+
+main {
     display: flex;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
 }
 
 .card img {
-    max-width: 300px; 
-    max-height: 300px; 
+    width: 200px;
+    height: 200px;
 }
+
+section {
+    background-color: aliceblue;
+    gap: 20px;
+    border:rgb(12, 98, 211);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
 
 .nav a:hover,
 .nav a:focus {
     background-color: #084ca1; /* Same effect as hover for keyboard users */
     color: white;
+}
+
+body {
+    height: fit-content ;
+    width: auto;
 }
