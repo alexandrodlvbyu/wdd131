@@ -41,6 +41,7 @@ footer {
 main {
     display: flex;
     max-width: none;
+    font-family: "Roboto Condensed", serif;
 }
 
 .card img {
