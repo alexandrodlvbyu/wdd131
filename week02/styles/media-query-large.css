@@ -1,14 +1,13 @@
-@media screen (min-width: 500px) {
-
+/* Media Query pour un viewport de 500px ou plus */
+@media screen and (min-width: 500px) {
     header {
-        
-        background-color: black;
-        color: white;
+      background-color: black; /* Arrière-plan noir */
+      color: white; /* Texte blanc */
     }
-
+  
     main {
-        flex: grid;
-        grid-template-columns: 1fr 1fr;
+      display: grid; /* Utilisation de la grille pour les colonnes */
+      grid-template-columns: 1fr 1fr; /* Deux colonnes de tailles égales */
+      gap: 1rem; /* Optionnel : espace entre les colonnes */
     }
-
-}
+  }
