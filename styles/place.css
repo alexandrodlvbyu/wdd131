@@ -40,7 +40,7 @@ footer {
 /* Media Queries */
 @media (min-width: 768px) {
     .weather h2::after {
-        content: " ⛅";
+        content: "⛅";
     }
 }
 
@@ -49,3 +49,12 @@ font-family: "Jersey 15",serif;
 }
 
 
+
+data {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
