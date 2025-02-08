@@ -20,10 +20,7 @@ header {
     padding: 1rem;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-}
+
 
 .weather {
     margin: 20px;
@@ -51,6 +48,4 @@ data {
 font-family: "Jersey 15",serif;
 }
 
-wheater {
-    font-family: "Jersey 15",serif;
-    }
+

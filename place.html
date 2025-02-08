@@ -15,27 +15,33 @@
         <h1>Toulouse, France</h1>
     </header>
     <main>
-
         <section>
             <figure>
-                <img src="images/toulouse.png" alt="Toulouse">
+                <picture>
+                    <source srcset="images/toulouse-small.png" media="(max-width: 600px)">
+                    <source srcset="images/toulouse-medium.png" media="(max-width: 1000px)">
+                    <img src="images/toulouse.png" alt="Toulouse">
+                </picture>
             </figure>
+            
         </section>
         <section class="data">
-            <h2>Data </h2>
-            <p>Area : <span id="area">118,3 KM^3</span>°C</p>
-            <p>Population : <span id="Population">504 078</span> km/h</p>
-            <p>Langage : <span id="Langage">French</span></p>
-            <p>Currecy : <span id="Currecy">Euros</span></p>
-            <p>Time Zone : <span id="time-zone">UTC</span></p>
-
-
+            <h2>Data</h2>
+            <ul>
+                <li>Area : <span id="area">118,3 KM²</span></li>
+                <li>Population : <span id="Population">504 078</span></li>
+                <li>Langage : <span id="Langage">French</span></li>
+                <li>Currecy : <span id="Currecy">Euros</span></li>
+                <li>Time Zone : <span id="time-zone">UTC</span></li>
+            </ul>
         </section>
         <section class="weather">
             <h2>Météo <span class="weather-icon">⛅</span></h2>
-            <p>Température : <span id="temperature">8</span>°C</p>
-            <p>Vitesse du vent : <span id="wind-speed">10</span> km/h</p>
-            <p>Refroidissement éolien : <span id="wind-chill">N/A</span></p>
+            <ul>
+                <li>Température : <span id="temperature">8</span>°C</li>
+                <li>Vitesse du vent : <span id="wind-speed">10</span> km/h</li>
+                <li>Refroidissement éolien : <span id="wind-chill">N/A</span></li>
+            </ul>
         </section>
     </main>
     <footer>
