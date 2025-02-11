@@ -1,9 +1,9 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    const gallery = document.querySelector(".temple-gallery"); // Sélection de la galerie
+    const gallery = document.querySelector(".temple-gallery"); 
 
     function displayTemples() {
-        gallery.innerHTML = ""; // Effacer les anciennes images
+        gallery.innerHTML = ""; 
 
         temples.forEach(temple => {
             const figure = document.createElement("figure");
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    displayTemples(); // Appeler la fonction pour afficher les temples
+    displayTemples(); 
 });
 
 const temples = [
@@ -108,14 +108,14 @@ const temples = [
   ];
 
   document.addEventListener("DOMContentLoaded", () => {
-    const gallery = document.querySelector(".temple-gallery"); // Sélection de la galerie
+    const gallery = document.querySelector(".temple-gallery"); 
 
     function displayTemples() {
-        gallery.innerHTML = ""; // Effacer les anciennes images
+        gallery.innerHTML = ""; 
 
         temples.forEach(temple => {
             const card = document.createElement("div");
-            card.classList.add("temple-card"); // Ajout d'une classe pour le style
+            card.classList.add("temple-card"); 
 
             const name = document.createElement("h3");
             name.textContent = temple.templeName;
@@ -132,7 +132,7 @@ const temples = [
             const img = document.createElement("img");
             img.src = temple.imageUrl;
             img.alt = `Image of ${temple.templeName}`;
-            img.loading = "lazy"; // Active le chargement différé
+            img.loading = "lazy"; 
 
             card.appendChild(name);
             card.appendChild(location);
@@ -144,15 +144,15 @@ const temples = [
         });
     }
 
-    displayTemples(); // Appeler la fonction pour afficher les temples
+    displayTemples(); 
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const gallery = document.querySelector(".temple-gallery"); // Sélection de la galerie
-    const navLinks = document.querySelectorAll("#nav-menu li a"); // Sélection des liens du menu
+    const gallery = document.querySelector(".temple-gallery"); 
+    const navLinks = document.querySelectorAll("#nav-menu li a"); 
 
     function displayTemples(filteredTemples) {
-        gallery.innerHTML = ""; // Effacer les anciens éléments
+        gallery.innerHTML = ""; 
 
         filteredTemples.forEach(temple => {
             const card = document.createElement("div");
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
         switch (category) {
             case "Old":
                 filteredTemples = temples.filter(temple => {
-                    const year = parseInt(temple.dedicated.split(",")[0]); // Extraire l'année
+                    const year = parseInt(temple.dedicated.split(",")[0]); 
                     return year < 1900;
                 });
                 break;
@@ -208,23 +208,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 filteredTemples = temples.filter(temple => temple.area < 10000);
                 break;
             default:
-                filteredTemples = temples; // "Home" affiche tous les temples
+                filteredTemples = temples; 
                 break;
         }
 
         displayTemples(filteredTemples);
     }
 
-    // Ajouter un event listener sur chaque lien du menu
+    
     navLinks.forEach(link => {
         link.addEventListener("click", (event) => {
-            event.preventDefault(); // Empêcher le comportement par défaut des liens
-            const category = event.target.textContent; // Récupérer le texte du lien
+            event.preventDefault(); 
+            const category = event.target.textContent; 
             filterTemples(category);
         });
     });
 
-    displayTemples(temples); // Afficher tous les temples au chargement
+    displayTemples(temples); 
 });
 
 

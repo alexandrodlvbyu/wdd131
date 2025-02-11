@@ -9,9 +9,9 @@
 
 img {
 
-width: 300px; /* Remplit la cellule */
-height: 200px; /* Conserve le ratio */
-object-fit: cover; /* Ajuste l'image en couvrant la zone */
+width: 300px; 
+height: 200px; 
+object-fit: cover; 
 
 }
 
@@ -31,10 +31,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(12, 98, 211); /* Même couleur que le footer */
+    background-color: rgb(12, 98, 211); 
     color: white;
     padding: 20px 40px;
-    font-family: "Jersey 15", serif; /* Même police que le footer */
+    font-family: "Jersey 15", serif; 
 }
 
 h1 {
