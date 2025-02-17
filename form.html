@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a project for the course WDD131 week 6">
+    <meta name="author" content="Alexandre de la Vega">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="styles/formlarge.css" media="(min-width: 768px)">    
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <h1>Product Review Form</h1>
+    <form action="review.html" method="get">
+        <label for="product">Product Name:</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product ...</option>
+        </select>
+        
+        <fieldset>
+            <legend>Overall Rating:</legend>
+            <label><input type="radio" name="rating" value="1" required> ☆</label>
+            <label><input type="radio" name="rating" value="2"> ☆☆</label>
+            <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+            <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+            <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+        </fieldset>
+        
+        <label for="install-date">Date of Installation:</label>
+        <input type="date" id="install-date" name="install_date" required>
+        
+        <fieldset>
+            <legend>Useful Features (Check all that apply):</legend>
+            <label><input type="checkbox" name="features" value="durability"> Durability</label>
+            <label><input type="checkbox" name="features" value="efficiency"> Efficiency</label>
+            <label><input type="checkbox" name="features" value="design"> Design</label>
+        </fieldset>
+        
+        <label for="review">Written Review:</label>
+        <textarea id="review" name="review"></textarea>
+        
+        <label for="username">Your Name (Optional):</label>
+        <input type="text" id="username" name="username">
+        
+        <input type="submit" value="Submit Review">
+    </form>
+    
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🇫🇷 Alexandre de la Vega Cros Toulouse, France 🇫🇷 </p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
+
