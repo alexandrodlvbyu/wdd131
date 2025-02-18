@@ -70,3 +70,9 @@ header {
     width: 80%;
     margin: auto;
 }
+
+footer {
+    background-color: #4CAF50;
+    text-align: center;
+    padding: 1rem
+    }
