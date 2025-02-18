@@ -34,3 +34,39 @@ button {
     cursor: pointer;
     font-size: 16px;
 }
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #333;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+.container {
+    padding: 2rem;
+    text-align: center;
+}
+.article {
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #4CAF50;
+    width: 80%;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+.sources {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border: 1px solid #4CAF50;
+    width: 80%;
+    margin: auto;
+}
